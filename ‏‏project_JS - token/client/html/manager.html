@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>לונה פארק</title>
+    <!-- <link rel="stylesheet" href="../css/home.css"> -->
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/manager.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">דף הבית</a></li>
+            <li><a href="about.html">אודות</a></li>
+            <li><a href="contact.html">צור קשר</a></li>
+            <li><a href="gallery.html">גלריית תמונות</a></li>
+            <li><a href="inTheSite.html">מה במתחם</a></li>
+        </ul>
+    </nav>
+    <div id="log-up-in">
+        <div class="navbar">
+            <button class="nav-button" id="helloto">מנהל</button>
+            <div class="dropdown-content">
+                <a href="signIn.html">התחברות</a>
+                <a href="signUp.html">הרשמה</a>
+                <a href="orders.html">ההזמנות שלי</a>
+                <a href="update.html">עדכון</a>
+                <a href="allUsers.html"> ניהול המשתמשים</a>
+                <a href="allCards.html"> ניהול הכרטיסים</a>
+                <a> כרטיסים לפי סוג</a>
+                <a onclick="out()"> יציאה</a>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <button onclick="order_ticket()">להזמנת כרטיסים</button>
+    </div>
+    <script src="../js/manager.js"></script>
+</body>
+</html>

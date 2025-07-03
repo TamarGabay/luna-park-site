@@ -1,0 +1,85 @@
+
+.main-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.main-content button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.main-content button:hover {
+    background-color: #ba4949;
+}
+
+#my_area
+{
+    height: 30px;
+    width: 80px;
+    background-color: rgb(189, 189, 189);
+    border-radius: 8%;
+}
+h3{
+    font-size: small;
+    color: rgb(48, 48, 48);
+    /* display: none; */
+}
+#log-up-in
+{
+    border: black;
+    height: 10%;
+    font-size: xx-large;
+    margin-right: 90%;
+    margin-top: 3%;
+    margin-left: 5%;
+
+}
+.navbar {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    /* margin-top: 25%; */
+}
+
+
+
+.nav-button:hover {
+    background-color: #3498db;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: small;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.navbar:hover .dropdown-content {
+    display: block;
+}
+.profile-icon {
+    font-size: 50px;
+    color: #3498db; /* צבע האייקון */
+}

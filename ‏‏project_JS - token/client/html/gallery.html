@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>גלריה</title>
+    <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="stylesheet" href="../css/all.css">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">דף הבית</a></li>
+            <li><a href="about.html">אודות</a></li>
+            <li><a href="contact.html">צור קשר</a></li>
+            <li><a href="gallery.html">גלריית תמונות</a></li>
+            <li><a href="inTheSite.html">מה במתחם</a></li>
+        </ul>
+    </nav>
+   
+    <header>
+        <!-- <div id="log-up-in">
+            <div class="navbar">
+                <button class="nav-button" id="helloto">מנהל</button>
+                <div class="dropdown-content">
+                    <a href="signIn.html">התחברות</a>
+                    <a href="signUp.html">הרשמה</a>
+                    <a href="orders.html">ההזמנות שלי</a>
+                    <a href="update.html">עדכון</a>
+                    <a href="allUsers.html"> ניהול הלקוחות</a>
+                    <a href="allCards.html"> ניהול הכרטיסים</a>
+                    <a> כרטיסים לפי סוג</a>
+                    <a onclick="out()"> יציאה</a>
+                </div>
+            </div> -->
+        </div><div id="header">לונה - פארק</div></header>
+    <h1>מה קורה פה...</h1>
+    <div class="gallery">
+        <div class="gallery-item medium">
+            <img src="../images/avi-werde-1NWTUko4cSo-unsplash.jpg" alt="Ride 2" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item large">
+            <img src="../images/andy-watkins-xg8GovNgwd8-unsplash.jpg" alt="Ride 1" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item small">
+            <img src="../images/ethan-hoover-N1vdGcHcrKI-unsplash.jpg" alt="Ride 3" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item large">
+            <img src="../images/gordon-wells-AaZltiibUK0-unsplash.jpg" alt="Ride 4" onclick="openModal(this)">
+        </div>       
+        <div class="gallery-item small">
+            <img src="../images/andy-watkins-xg8GovNgwd8-unsplash.jpg" alt="Ride 1" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item medium">
+            <img src="../images/jacob-spaccavento-ibhwNQQn8M0-unsplash.jpg" alt="Ride 5" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item large">
+            <img src="../images/andy-watkins-xg8GovNgwd8-unsplash.jpg" alt="Ride 1" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item medium">
+            <img src="../images/avi-werde-1NWTUko4cSo-unsplash.jpg" alt="Ride 2" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item small">
+            <img src="../images/ethan-hoover-N1vdGcHcrKI-unsplash.jpg" alt="Ride 3" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item large">
+            <img src="../images/gordon-wells-AaZltiibUK0-unsplash.jpg" alt="Ride 4" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item medium">
+            <img src="../images/jacob-spaccavento-ibhwNQQn8M0-unsplash.jpg" alt="Ride 5" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item small">
+            <img src="../images/andy-watkins-xg8GovNgwd8-unsplash.jpg" alt="Ride 1" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item large">
+            <img src="../images/andy-watkins-xg8GovNgwd8-unsplash.jpg" alt="Ride 1" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item medium">
+            <img src="../images/avi-werde-1NWTUko4cSo-unsplash.jpg" alt="Ride 2" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item small">
+            <img src="../images/ethan-hoover-N1vdGcHcrKI-unsplash.jpg" alt="Ride 3" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item large">
+            <img src="../images/gordon-wells-AaZltiibUK0-unsplash.jpg" alt="Ride 4" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item medium">
+            <img src="../images/jacob-spaccavento-ibhwNQQn8M0-unsplash.jpg" alt="Ride 5" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item small">
+            <img src="../images/andy-watkins-xg8GovNgwd8-unsplash.jpg" alt="Ride 1" onclick="openModal(this)">
+        </div>
+        <!-- Add more images as needed -->
+    </div>
+
+    <!-- Modal for enlarged image -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

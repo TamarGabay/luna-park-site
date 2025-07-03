@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/2.jpg'); /* ודא שהתמונה קיימת באותו תיקייה */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    text-align: center;
+    height: 800px;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-button {
+    width: 150px;
+    border-radius: 0%;
+    border-color:#858585 ;
+    background-color: #858585;
+    color: white;
+    padding: 10px;
+    font-size: small;
+    border: none;
+    cursor: pointer;
+}

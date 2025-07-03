@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/2.jpg'); /* ודא שהתמונה קיימת באותו תיקייה */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+header
+{
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+#header
+{
+    margin-top: 10%;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+
+}
+h1 {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item.large {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.gallery-item.medium {
+    grid-row: span 2;
+}
+
+.gallery-item.small {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+#log-up-in
+{
+    border: black;
+    height: 10%;
+    font-size: xx-large;
+    margin-right: 90%;
+    margin-top: 2%;
+    /* width: 200px; */
+
+    /* margin-bottom: 90%; */
+}
+.navbar {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    margin-left: 10px;
+
+    /* margin-left: 10px; */
+    /* margin-top: 25%; */
+}
+
+.nav-button {
+    background-color: #858585;
+    color: white;
+    padding: 10px;
+    font-size: small;
+    border: none;
+    cursor: pointer;
+    /* margin-top: 0%; */
+}
+
+.nav-button:hover {
+    background-color: #3498db;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: small;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.navbar:hover .dropdown-content {
+    display: block;
+}

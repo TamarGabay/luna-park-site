@@ -1,0 +1,224 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+} */
+
+h1 {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    margin-top: 3%;
+}
+
+.tickets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.ticket-item {
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #3498db;
+    width: 200px;
+    text-align: center;
+    background-color: white;
+}
+
+.ticket-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.ticket-item h2 {
+    margin: 10px 0;
+    color: #000000;
+}
+
+.ticket-item p {
+    font-size: 16px;
+    color: #000000;
+}
+.ticket-item button {
+    background-color: #3498db;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ticket-item button:hover {
+    background-color: #3498db;
+    margin-top: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+.modal-content {
+    background-color: #ffffff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: left;
+    color: black;
+}
+
+.close {
+    color: #000000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(255, 254, 254);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.order-form {
+    display: flex;
+    align-items: center;
+}
+
+.order-image img {
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
+    padding-left: 30px;
+    /* padding-right: 10px; */
+
+}
+
+.order-details label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.order-details input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.order-details button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.order-details button:hover {
+    background-color: #25213d;
+}
+body {
+    height: 800px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/2.jpg'); /* ודא שהתמונה קיימת באותו תיקייה */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#log-up-in
+{
+    border: black;
+    height: 10%;
+    font-size: xx-large;
+    margin-right: 90%;
+    /* margin-top: 4%; */
+}
+.navbar {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    margin-left: 10px;
+    /* margin-top: 25%; */
+}
+
+.nav-button {
+    width: 150px;
+    border-radius: 0%;
+
+    background-color: #858585;
+    color: white;
+    padding: 10px;
+    font-size: small;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background-color: #3498db;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: small;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.navbar:hover .dropdown-content {
+    display: block;
+}

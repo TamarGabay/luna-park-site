@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Park Tickets</title>
+    <link rel="stylesheet" href="../css/atractions.css">
+    <link rel="stylesheet" href="../css/all.css">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">דף הבית</a></li>
+            <li><a href="about.html">אודות</a></li>
+            <li><a href="contact.html">צור קשר</a></li>
+            <li><a href="gallery.html">גלריית תמונות</a></li>
+            <li><a href="inTheSite.html">מה במתחם</a></li>
+        </ul>
+    </nav>
+    
+    <h1>Park Tickets
+        <div id="log-up-in">
+            <div class="navbar">
+                <button class="nav-button" id="helloto">מנהל</button>
+                <div class="dropdown-content">
+                    <a href="signIn.html">התחברות</a>
+                    <a href="signUp.html">הרשמה</a>
+                    <a href="orders.html">ההזמנות שלי</a>
+                    <a href="update.html">עדכון</a>
+                    <a onclick="out()"> יציאה</a>
+                </div>
+            </div>
+        </div>
+    </h1>
+
+    <div class="tickets">
+        <div class="ticket-item">                
+            <img src="../images/child-ticket.jpg" alt="כרטיס לילד">
+            <h2 id="kid-card">כרטיס לילד</h2>
+            <p>מחיר: 50₪</p>
+            <button class="order" onclick="openOrderForm('כרטיס לילד', '../images/child-ticket.jpg', 50,'kid-card')">הזמן</button>
+        </div>
+        <div class="ticket-item">                
+            <img src="../images/adul-ticket.jpg" alt="כרטיס למבוגר">
+            <h2 id="adult-card">כרטיס למבוגר</h2>
+            <p>מחיר: 100₪</p>
+            <button class="order" onclick="openOrderForm('כרטיס למבוגר', '../images/adul-ticket.jpg', 100,'adult-card')">הזמן</button>
+        </div>
+        <div class="ticket-item">
+            <img src="../images/family-ticket.jpg" alt="כרטיס משפחתי (5 כניסות)">
+            <h2 id="family-card">כרטיס משפחתי</h2>
+            <h2>(5 כניסות)</h2>
+            <p>מחיר: 200₪</p>
+            <button class="order" onclick="openOrderForm('כרטיס משפחתי (5 כניסות)', '../images/family-ticket.jpg', 200,'family-card')">הזמן</button>
+        </div>
+        <div class="ticket-item">
+            <img src="../images/senior-ticket.jpg" alt="כרטיס מנוי">
+            <h2 id="senior-card">כרטיס מנוי</h2>
+            <p>מחיר: 350₪</p>
+            <button class="order" onclick="openOrderForm('כרטיס מנוי', '../images/senior-ticket.jpg', 350,'senior-card')">הזמן</button>
+        </div>
+    </div>
+
+    <!-- Order Form Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeOrderForm()">&times;</span>
+            <div class="order-form">
+                <div class="order-image">
+                    <img id="orderImage" src="" alt="Ticket Image">
+                </div>
+                <div class="order-details">
+                    <h2 id="orderTitle"></h2>
+                    <p id="orderPrice"></p>
+                    <label for="quantity">כמות:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                    
+         
+                    <label for="date">תאריך:</label>
+                    <input type="date" id="date" name="date">
+                    <button onclick="submitOrder(event)">הזמן עכשיו</button>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+    <script src="../js/atractions.js"></script>
+    <script src="../js/all.js"></script>
+</body>
+</html>
+

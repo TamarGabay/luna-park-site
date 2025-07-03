@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amusement Park</title>
+    <link rel="stylesheet" href="../css/inTheSite.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        main {
+            max-width: 800px;
+            margin: 2em auto;
+            background-color: white;
+            padding: 1em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        section h2 {
+            color: #3498db;            
+            margin-bottom: 0.5em;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        /* ul li {
+            background: url('https://via.placeholder.com/20') no-repeat left center;
+            background-size: contain;
+            padding-left: 30px;
+            margin-bottom: 0.5em;
+        } */
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">דף הבית</a></li>
+            <li><a href="about.html">אודות</a></li>
+            <li><a href="contact.html">צור קשר</a></li>
+            <li><a href="gallery.html">גלריית תמונות</a></li>
+            <li><a href="inTheSite.html">מה במתחם</a></li>
+        </ul>
+    </nav>
+   
+    <header>
+        <div id="log-up-in">
+            <!-- <button onclick="log_up()">להרשמה</button>
+            <button onclick="log_in()">להתחברות</button> -->
+            <!-- <div id="my_area"> <h3 ></h3></div> -->
+            <div class="navbar">
+                <button class="nav-button" id="helloto">להתחברות
+                </button>
+                <div class="dropdown-content">
+                    <a href="signIn.html">התחברות</a>
+                    <a href="signUp.html">הרשמה</a>
+                    <a href="orders.html">ההזמנות שלי</a>
+                    <a href="update.html">עדכון</a>
+                    <a onclick="out()"> יציאה</a>
+                </div>
+            </div>
+        </div>
+        <h1>ברוכים הבאים ללונה פארק</h1>
+    </header>
+    <main>
+        <section>
+            <h2>אודות הפארק</h2>
+            <p>פארק השעשועים שלנו מציע מגוון רחב של פעילויות מהנות ומרגשות לכל הגילאים. בין אם אתם מחפשים טיולים מרתקים, אוכל טעים או בידור ידידותי למשפחות, יש לנו משהו לכולם!
+            </p>
+        </section>
+        <section>
+            <h2>מתקנים</h2>
+            <ul>
+                <li>דוכן זיכיון</li>
+                <li>שירותים</li>
+                <li>עזרה ראשונה</li>
+                <li>חנות מתנות</li>
+                <li>אזור פיקניק</li>
+            </ul>
+        </section>
+        <section>
+            <h2>טיולים ואטרקציות</h2>
+            <ul>
+                <li>רכבת הרים</li>
+                <li>גלגל ענק</li>
+                <li>מכוניות מתנגשות</li>
+                <li>טיולי מים</li>
+                <li>קרוסלה</li>
+                <li>איזור משחקים לילדים</li>
+                <li>פינת ליטוף</li>
+
+            </ul>
+        </section>
+        <section>
+            <h2>אפשרויות אוכל</h2>
+            <ul>
+                <li>חטיפים</li>
+                <li>דוכן פיצה</li>
+                <li>המבורגר</li>
+                <li>דוכן גלידה</li>
+                <li>חנות ממתתקים</li>
+            </ul>
+        </section>
+        <section>
+            <h2>אירועים מיוחדים</h2>
+            <p>אל תחמיצו את האירועים המיוחדים שלנו לאורך כל השנה, כולל פסטיבלים עונתיים, הופעות חיות ועוד!</p>
+        </section>
+    </main>
+    <script src="../js/all.js"></script>
+</body>
+</html>

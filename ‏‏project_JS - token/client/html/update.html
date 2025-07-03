@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Detailes</title>
+    <link rel="stylesheet" href="../css/update.css">
+    <link rel="stylesheet" href="../css/all.css">
+</head>
+<body>
+    <!-- <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">דף הבית</a></li>
+                <li><a href="about.html">אודות</a></li>
+                <li><a href="contact.html">צור קשר</a></li>
+                <li><a href="gallery.html">גלריית תמונות</a></li>
+                <li><a href="attractions.html">מה במתחם</a></li>
+                <li><a href="pricing.html">מחירון</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <nav>
+        <ul>
+            <li><a href="home.html">דף הבית</a></li>
+            <li><a href="about.html">אודות</a></li>
+            <li><a href="contact.html">צור קשר</a></li>
+            <li><a href="gallery.html">גלריית תמונות</a></li>
+            <li><a href="inTheSite.html">מה במתחם</a></li>
+        </ul>
+    </nav>
+    <div id="log-up-in">
+        <div class="navbar">
+            <button class="nav-button" id="helloto">מנהל</button>
+            <div class="dropdown-content">
+                <a href="signIn.html">התחברות</a>
+                <a href="signUp.html">הרשמה</a>
+                <a href="orders.html">ההזמנות שלי</a>
+                <a href="update.html">עדכון</a>
+                <a href="allUsers.html"> ניהול הלקוחות</a>
+                <a href="allCards.html"> ניהול הכרטיסים</a>
+                <a> כרטיסים לפי סוג</a>
+                <a onclick="out()"> יציאה</a>
+            </div>
+        </div>
+    </div>
+    <h1>Update Detailes</h1>
+    <form id="signUpForm" onsubmit="update(event)">
+            <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+       
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br>
+        <button type="submit">לעדכון</button>
+    </form>
+    <script src="../js/update.js"></script>
+</body>
+</html>

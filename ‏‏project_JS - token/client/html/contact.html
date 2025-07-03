@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>צור קשר - לונה פארק</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/all.css">
+
+    <style>
+        
+      
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">דף הבית</a></li>
+            <li><a href="about.html">אודות</a></li>
+            <li><a href="contact.html">צור קשר</a></li>
+            <li><a href="gallery.html">גלריית תמונות</a></li>
+            <li><a href="inTheSite.html">מה במתחם</a></li>
+        </ul>
+    </nav>
+    <div id="log-up-in">
+        <div class="navbar">
+            <button class="nav-button" id="helloto">מנהל</button>
+            <div class="dropdown-content">
+                <a href="signIn.html">התחברות</a>
+                <a href="signUp.html">הרשמה</a>
+                <a href="orders.html">ההזמנות שלי</a>
+                <a href="update.html">עדכון</a>
+                <a href="allUsers.html"> ניהול הלקוחות</a>
+                <a href="allCards.html"> ניהול הכרטיסים</a>
+                <a> כרטיסים לפי סוג</a>
+                <a onclick="out()"> יציאה</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <pre >
+    אנו מודים על פנייתך 
+    ושמחים לשמוע ממך על כל הצעה או רעיון,
+    נשמח לעזור ולענות לשאלותיך. 
+
+    על מנת שנוכל לטפל בנושא באופן יעיל ביותר,
+    אנא מלא פרטים בטופס שלהלן:
+        </pre>
+        <form>
+            
+            <label for="name">שם:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="phone">טלפון:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="email">דוא"ל:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">הודעה:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit" onclick="f1()">שליחה</button>
+        </form>
+    </div>
+    <!-- <footer>
+        <marquee>
+            <div>
+                &copy;  Miri Zinger &nbsp; &nbsp; | &nbsp; &nbsp; Tamar Gabay &nbsp; &nbsp; 
+            </div>
+        </marquee>
+    </footer> -->
+    <script src="../js/contact.js"></script>
+</body>
+</html>
